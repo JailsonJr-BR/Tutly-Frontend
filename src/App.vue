@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans subpixel-antialiased">
+  <div class='font-sans subpixel-antialiased'>
     <router-view />
   </div>
 </template>
