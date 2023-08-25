@@ -8,18 +8,23 @@
         <component :is="icon" class="h-5 w-5 text-gray-500" aria-hidden="true" />
       </div>
       <input
-        :type="type"
+        :type="currentType"
         :name="name"
         :id="name"
         class="block w-full bg-gray-50 rounded-md border-0 py-2.5 pl-12 text-gray-700 ring-1 ring-inset ring-gray-300 placeholder:text-500 font-medium focus:outline-blue-300 sm:text-base sm:leading-6"
         :placeholder="placeholder"
       />
+      <div v-if="type === 'password'" class="absolute inset-y-0 right-0 flex items-center pr-3" @click="togglePasswordVisibility">
+        <component :is="passwordVisible ? EyeIcon : EyeSlashIcon" class="h-5 w-5 text-gray-500" aria-hidden="true" />
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { defineProps } from 'vue'
+import { EyeSlashIcon, EyeIcon } from '@heroicons/vue/20/solid'
 
 const { name, type, placeholder, icon } = defineProps({
   name: {
@@ -40,4 +45,12 @@ const { name, type, placeholder, icon } = defineProps({
     default: null
   }
 })
+
+const passwordVisible = ref(false)
+const currentType = ref(type)
+
+const togglePasswordVisibility = () => {
+  passwordVisible.value = !passwordVisible.value
+  currentType.value = passwordVisible.value ? 'text' : 'password'
+}
 </script>
