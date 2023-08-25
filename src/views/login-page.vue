@@ -23,7 +23,7 @@
             <div class="flex items-center justify-between">
               <checkboxDescription description="Lembrar de mim" />
 
-              <textLink name="Esqueceu a senha?" link="" />
+              <textLink name="Esqueceu a senha?" path="" />
             </div>
 
             <div>
@@ -34,7 +34,7 @@
           <p class="flex justify-center gap-1.5 mt-10 text-center text-sm text-gray-500">
             Não tem uma conta?
             {{ ' ' }}
-            <textLink name="Não tenho conta" link="" />
+            <textLink name="Não tenho conta" path="register" />
           </p>
 
         </div>
