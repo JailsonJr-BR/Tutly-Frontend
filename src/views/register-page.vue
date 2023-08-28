@@ -1,14 +1,15 @@
 <template>
   <div class="h-full">
-    <div class="flex min-h-full flex-1 flex-col justify-center items-center py-10 sm:px-6 lg:px-8">
-      <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[620px]">
-        <div class="bg-white px-12 py-20 shadow sm:rounded-lg sm:px-20">
+    <div class="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8">
+      <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
+        <div class="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12">
+          <img class="h-8 mb-4 w-auto" src="../assets/images/brands/tutly-logo.svg" alt="Your Company" />
 
           <h1 class="text-3xl text-secondary-900 font-bold">Crie sua conta</h1>
 
           <p class="text-gray-500 mt-2">Olá, bem-vindo! Selecione o método cadastro:</p>
 
-          <div class="flex gap-20 my-10">
+           <div class="flex gap-7 my-10">
             <cardSocialLogin name="Google" logo="google-logo.png" />
             <cardSocialLogin name="Facebook" logo="facebook-logo.png" />
           </div>
@@ -31,7 +32,6 @@
             {{ ' ' }}
             <textLink name="Entrar na minha conta" path="login" />
           </p>
-
         </div>
       </div>
     </div>

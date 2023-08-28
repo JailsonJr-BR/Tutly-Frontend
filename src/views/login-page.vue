@@ -3,6 +3,7 @@
     <div class="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
         <div class="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12">
+          <img class="h-8 mb-4 w-auto" src="../assets/images/brands/tutly-logo.svg" alt="Your Company" />
 
           <h1 class="text-3xl text-secondary-900 font-bold">Entre em sua conta</h1>
 
